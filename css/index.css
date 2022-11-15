@@ -35,3 +35,6 @@ html, body {
     position: fixed;
     z-index: 100;
 }
+.navbar-nav {
+    margin-left: 75%;
+}
