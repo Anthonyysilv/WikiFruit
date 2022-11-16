@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrever-se</title>
+    <link rel="stylesheet" href="https://codepen.io/gymratpacks/pen/VKzBEp#0">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,300" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../css/increver.css">
+</head>
+<body>
+    <div class="row">
+        <div class="col-md-12">
+            <form action="../index.html" method="post">
+                <h1>Inscrever-se</h1>
+                <fieldset>
+                    <legend><span class="number">1</span>Suas informações básicas</legend>
+                    <label for="name">Nome:</label>
+                    <input type="text" name="name_user" id="name">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="mail" name="user_email">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="user_password">
+                    <label>Idade:</label>
+                    <input type="radio" id="under_13" value="under_13" name="user_age"><label for="under_13" class="light">Abaixo de 13 anos</label><br>
+                    <input type="radio" id="over_13" value="over_13" name="user_age"><label for="over_13" class="light">Acima de 13 anos</label>
+                </fieldset>
+                <fieldset>
+                    <legend><span class="number">2</span>Seu perfiu</legend>
+                    <label for="bio">Bio:</label>
+                    <textarea name="user_bio" id="bio"></textarea>
+                </fieldset>
+                <p>O botão "Se increver" não está funcionando! Não clique!</p>
+                <button type="submit">Se increver</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
