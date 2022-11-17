@@ -28,13 +28,16 @@ html, body {
 }
 /*Preloader gif*/
 #preloader {
-    background: #000 url(../img/preloader.gif) no-repeat center center;
-    /*background-size: 30%;*/
+    background: #FCFAEC url(../img/preloader.gif) no-repeat center center;
     height: 100%;
     width: 100%;
     position: fixed;
     z-index: 100;
 }
+/*Preloader gif end*/
 .navbar-nav {
     margin-left: 65%;
+}
+.navbar-toggler{
+    float: right;
 }
