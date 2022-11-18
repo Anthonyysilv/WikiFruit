@@ -36,8 +36,5 @@ html, body {
 }
 /*Preloader gif end*/
 .navbar-nav {
-    margin-left: 75%;
-}
-.navbar-toggler{
-    float: right;
+    margin-left: 70%;
 }
