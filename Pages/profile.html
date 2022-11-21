@@ -5,99 +5,241 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/tree-logo.jpg">
-    <title>Criar perfil</title>
+    <title>Perfil</title>
     <link rel="stylesheet" href="../css/profile.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <div class="profile-header">
-      <div class="profile-img">
-        <img src="./bg.jpg" width="200" alt="Profile Image">
+  <div class="main-content">
+    <!-- nav -->
+    <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
+      <div class="container-fluid">
+        <!-- Brand -->
+        <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="https://www.creative-tim.com/product/argon-dashboard" target="_blank">Perfil do usuário</a>
+        <!-- Formulario -->
+        <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
+          <div class="form-group mb-0">
+            <div class="input-group input-group-alternative">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fas fa-search"></i></span>
+              </div>
+              <input class="form-control" placeholder="Search" type="text">
+            </div>
+          </div>
+        </form>
+        <!-- Usuário -->
+        <ul class="navbar-nav align-items-center d-none d-md-flex">
+          <li class="nav-item dropdown">
+            <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="media align-items-center">
+                <span class="avatar avatar-sm rounded-circle">
+                  <img alt="Image placeholder" src="https://cdn-icons-png.flaticon.com/512/219/219988.png">
+                </span>
+                <div class="media-body ml-2 d-none d-lg-block">
+                  <span class="mb-0 text-sm  font-weight-bold">Nome do usuário</span>
+                </div>
+              </div>
+            </a>
+            <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-right">
+              <div class=" dropdown-header noti-title">
+                <h6 class="text-overflow m-0">Bem-vindo!</h6>
+              </div>
+              <a href="../examples/profile.html" class="dropdown-item">
+                <i class="ni ni-single-02"></i>
+                <span>Meu perfil</span>
+              </a>
+              <a href="../examples/profile.html" class="dropdown-item">
+                <i class="ni ni-settings-gear-65"></i>
+                <span>Configurações</span>
+              </a>
+              <a href="../examples/profile.html" class="dropdown-item">
+                <i class="ni ni-calendar-grid-58"></i>
+                <span>Atividade</span>
+              </a>
+              <a href="../examples/profile.html" class="dropdown-item">
+                <i class="ni ni-support-16"></i>
+                <span>Apoiar</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#!" class="dropdown-item">
+                <i class="ni ni-user-run"></i>
+                <span>Sair</span>
+              </a>
+            </div>
+          </li>
+        </ul>
       </div>
-      <div class="profile-nav-info">
-        <h3 class="user-name">Nome do usuário</h3>
-        <div class="address">
-          <p id="state" class="state">Estado</p>
-          <span id="country" class="country">País</span>
-        </div>
-  
-      </div>
-      <div class="profile-option">
-        <div class="notification">
-          <i class="fa fa-bell"></i>
-          <span class="alert-message">3</span>
+    </nav>
+    <!-- Header -->
+    <div class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center" style="min-height: 600px; background-image: url(https://www.rbsdirect.com.br/imagesrc/25370856.jpg?w=700); background-size: cover; background-position: center top;">
+      <!-- Mask -->
+      <span class="mask bg-gradient-default opacity-8"></span>
+      <!-- Header container -->
+      <div class="container-fluid d-flex align-items-center">
+        <div class="row">
+          <div class="col-lg-7 col-md-10">
+            <h1 class="display-2 text-white">Olá @usuário</h1>
+            <p class="text-white mt-0 mb-5">Essa é a sua página de perfil.</p>
+            <p class="text-white mt-0 mb-5"><a id="link" href="../index.html">Voltar</a></p>
+            <a href="#!" class="btn btn-info">Editar o perfil</a>
+          </div>
         </div>
       </div>
     </div>
-  
-    <div class="main-bd">
-      <div class="left-side">
-        <div class="profile-side">
-          <p class="mobile-no"><i class="fa fa-phone"></i> +23470xxxxx700</p>
-          <p class="user-mail"><i class="fa fa-envelope"></i> usuario@gmail.com</p>
-          <div class="user-bio">
-            <h3>Bio</h3>
-            <p class="bio">
-              Lorem ipsum dolor sit amet, hello how consectetur adipisicing elit. Sint consectetur provident magni yohoho consequuntur, voluptatibus ghdfff exercitationem at quis similique. Optio, amet!
-            </p>
-          </div>
-          <div class="profile-btn">
-            <button class="chatbtn" id="chatBtn"><i class="fa fa-comment"></i>Chat</button>
-            <button class="createbtn" id="Create-post"><i class="fa fa-plus"></i> Criar</button>
-          </div>
-          <div class="user-rating">
-            <h3 class="rating">4.5</h3>
-            <div class="rate">
-              <div class="star-outer">
-                <div class="star-inner">
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
+    <!-- Page content -->
+    <div class="container-fluid mt--7">
+      <div class="row">
+        <div class="col-xl-4 order-xl-2 mb-5 mb-xl-0">
+          <div class="card card-profile shadow">
+            <div class="row justify-content-center">
+              <div class="col-lg-3 order-lg-2">
+                <div class="card-profile-image">
+                  <a href="#">
+                    <img src="https://cdn-icons-png.flaticon.com/512/219/219988.png" class="rounded-circle">
+                  </a>
                 </div>
               </div>
-              <span class="no-of-user-rate"><span>123</span>&nbsp;&nbsp;reviews</span>
             </div>
-  
+            <div class="card-header text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
+              <div class="d-flex justify-content-between">
+                <a href="#" class="btn btn-sm btn-info mr-4">Conectar</a>
+                <a href="#" class="btn btn-sm btn-default float-right">Mensagens</a>
+              </div>
+            </div>
+            <div class="card-body pt-0 pt-md-4">
+              <div class="row">
+                <div class="col">
+                  <div class="card-profile-stats d-flex justify-content-center mt-md-5">
+                    <div>
+                      <span class="heading">∞</span>
+                      <span class="description">Fotos</span>
+                    </div>
+                    <div>
+                      <span class="heading">∞</span>
+                      <span class="description">Comentários</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center">
+                <h3>
+                  Nome do usuário<span class="font-weight-light">, ∞</span>
+                </h3>
+                <div class="h5 font-weight-300">
+                  <i class="ni location_pin mr-2"></i>Cidade, País
+                </div>
+                <div class="h5 mt-4">
+                  <i class="ni business_briefcase-24 mr-2"></i>
+                  Gerente de Soluções - Diretor de Criação WikiFruits
+                </div>
+                <hr class="my-4">
+                <a id="link" href="#">Mostrar mais</a>
+              </div>
+            </div>
           </div>
         </div>
-  
-      </div>
-      <div class="right-side">
-  
-        <div class="nav">
-          <ul>
-            <li onclick="tabs(0)" class="user-post active">Postagens</li>
-            <li onclick="tabs(1)" class="user-review">Reviews</li>
-            <li onclick="tabs(2)" class="user-setting">Configurações</li>
-          </ul>
-        </div>
-        <div class="profile-body">
-          <div class="profile-posts tab">
-            <h1>Suas postagens</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quia sunt itaque ut libero cupiditate ullam qui velit laborum placeat doloribus, non tempore nisi ratione error rem minima ducimus. Accusamus adipisci quasi at itaque repellat sed
-              magni eius magnam repellendus. Quidem inventore repudiandae sunt odit. Aliquid facilis fugiat earum ex officia eveniet, nisi, similique ad ullam repudiandae molestias aspernatur qui autem, nam? Cupiditate ut quasi iste, eos perspiciatis maiores
-              molestiae.</p>
-          </div>
-          <div class="profile-reviews tab">
-            <h1>Suas reviews</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam pariatur officia, aperiam quidem quasi, tenetur molestiae. Architecto mollitia laborum possimus iste esse. Perferendis tempora consectetur, quae qui nihil voluptas. Maiores debitis
-              repellendus excepturi quisquam temporibus quam nobis voluptatem, reiciendis distinctio deserunt vitae! Maxime provident, distinctio animi commodi nemo, eveniet fugit porro quos nesciunt quidem a, corporis nisi dolorum minus sit eaque error
-              sequi ullam. Quidem ut fugiat, praesentium velit aliquam!</p>
-          </div>
-          <div class="profile-settings tab">
-            <div class="account-setting">
-              <h1>Configurações de conta</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit omnis eaque, expedita nostrum, facere libero provident laudantium. Quis, hic doloribus! Laboriosam nemo tempora praesentium. Culpa quo velit omnis, debitis maxime, sequi
-                animi dolores commodi odio placeat, magnam, cupiditate facilis impedit veniam? Soluta aliquam excepturi illum natus adipisci ipsum quo, voluptatem, nemo, commodi, molestiae doloribus magni et. Cum, saepe enim quam voluptatum vel debitis
-                nihil, recusandae, omnis officiis tenetur, ullam rerum.</p>
+        <div class="col-xl-8 order-xl-1">
+          <div class="card bg-secondary shadow">
+            <div class="card-header bg-white border-0">
+              <div class="row align-items-center">
+                <div class="col-8">
+                  <h3 class="mb-0">Minha conta</h3>
+                </div>
+                <div class="col-4 text-right">
+                  <a href="#!" class="btn btn-sm btn-primary">Configurações</a>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <form>
+                <h6 class="heading-small text-muted mb-4">Informações de usuário</h6>
+                <div class="pl-lg-4">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group focused">
+                        <label class="form-control-label" for="input-username">Nome de usuário</label>
+                        <input type="text" id="input-username" class="form-control form-control-alternative" placeholder="Username" value="usuário.profile">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label class="form-control-label" for="input-email">Endereço de e-mail</label>
+                        <input type="email" id="input-email" class="form-control form-control-alternative" placeholder="user@example.com">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="form-group focused">
+                        <label class="form-control-label" for="input-first-name">Primeiro nome</label>
+                        <input type="text" id="input-first-name" class="form-control form-control-alternative" placeholder="Primeiro nome" value="Usuário">
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group focused">
+                        <label class="form-control-label" for="input-last-name">Sobrenome</label>
+                        <input type="text" id="input-last-name" class="form-control form-control-alternative" placeholder="Sobrenome" value="profile">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="my-4">
+                <!-- Address -->
+                <h6 class="heading-small text-muted mb-4">Informações de contato</h6>
+                <div class="pl-lg-4">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group focused">
+                        <label class="form-control-label" for="input-address">Endereço</label>
+                        <input id="input-address" class="form-control form-control-alternative" placeholder="Endereço de casa" value="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09" type="text">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <div class="form-group focused">
+                        <label class="form-control-label" for="input-city">Cidade</label>
+                        <input type="text" id="input-city" class="form-control form-control-alternative" placeholder="Cidade" value="Birigui">
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="form-group focused">
+                        <label class="form-control-label" for="input-country">País</label>
+                        <input type="text" id="input-country" class="form-control form-control-alternative" placeholder="País" value="Brasil">
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="form-group">
+                        <label class="form-control-label" for="input-country">Cartão postal</label>
+                        <input type="number" id="input-postal-code" class="form-control form-control-alternative" placeholder="Cartão postal">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="my-4">
+                <!-- Description -->
+                <h6 class="heading-small text-muted mb-4">BIO</h6>
+                <div class="pl-lg-4">
+                  <div class="form-group focused">
+                    <label>Sobre mim</label>
+                    <textarea rows="4" class="form-control form-control-alternative" placeholder="Algumas palavras sobre você ..."></textarea>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <script src="../JS/profile.js"></script>
+  <footer class="footer">
+    <div class="row align-items-center justify-content-xl-between">
+      <div class="col-xl-6 m-auto text-center">
+        <div class="copyright">
+          <p>Feito com <a href="https://www.creative-tim.com/product/argon-dashboard" target="_blank">Argon Dashboard</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
