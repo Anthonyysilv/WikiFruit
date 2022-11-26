@@ -17,25 +17,22 @@
 </head>
 <body>
     <div id="preloader"></div>
-    <header>
-            <!--Itens da barra de "navegação"-->
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark"> 
-            <!--<button class="navbar-toggler" type="button" data-target="#navigation"> 
-                <span class="navbar-toggler-icon"></span> 
-            </button>-->
-            <div class="container-fluid">
-                 <img class="rounded-circle mr-3" src="https://source.unsplash.com/70x70/?garden" alt="Logo wiki frutas">
-                    <!--O link usado pega uma imagem aleatoria de loja cada vez que o site é resetado-->
-                    <!--A class: rounded-circle faz a imagem ficar com as bordas redondas-->
-                <a class="navbar-brand text-black" href="#">Wikipédia frutifera</a>
-                <div class="collapse navbar-collapse">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"> <a href="Pages/login.html" class="nav-link">Entrar</a></li>
-                        <li class="nav-item"><a href="Pages/inscrever.html" class="nav-link">Cadastrar</a></li>
-                        <li class="nav-item"> <a href="Pages/contact.html" class="nav-link">Contatos</a></li>
-                    </ul>
-                </div>
-            </div>
+<header>
+        <nav class="nav">
+          <a href="/" class="logo">logo</a>
+  
+          <div class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+  
+          <div class="nav__link hide">
+            <a href="#">Entrar</a>
+            <a href="#"></a>
+            <a href="#">Contate-nos</a>
+            <a href="#">Perfil</a>
+          </div>
         </nav>
 </header>
 <section> <!--Corrosel itens-->
@@ -67,6 +64,12 @@
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100" src="https://source.unsplash.com/1400x500/?avocado" alt="Abacate"> <!--Imagens aleatorias de maçãs?-->
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://source.unsplash.com/1400x500/?kiwi" alt="Kiwi"> <!--Imagens aleatorias de maçãs?-->
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://source.unsplash.com/1400x500/?blackberry" alt="Amora"> <!--Imagens aleatorias de maçãs?-->
                 </div>
             </div>
         </div>
@@ -259,5 +262,6 @@
             loader.style.display = "none";
         })
     </script>
+    <script src="JS/navbar.js"></script>
 </body>
 </html>
