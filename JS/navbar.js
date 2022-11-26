@@ -1,6 +1,10 @@
-const hamburger = document.querySelector('.hamburger');
-const navLink = document.querySelector('.nav__link');
+var ul = document.querySelector('nav ul');
+var menuBtn = document.querySelector('.menu-btn i');
 
-hamburger.addEventListener('click', () => {
-  navLink.classList.toggle('hide');
-});
+function menuShow() {
+  if (ul.classList.contains('open')) {
+    ul.classList.remove('open');
+  }else {
+    ul.classList.add('open');
+  }
+}

@@ -12,27 +12,26 @@
     <link rel="shortcut icon" href="img/tree-logo.jpg">
         <title>Wiki fruits</title>
         <!--CSS files-->
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/index.css"> <!--CSS da página em geral-->
+    <link rel="stylesheet" href="css/navbar.css"> <!--CSS da barra de navegação da página index-->
 </head>
 <body>
     <div id="preloader"></div>
 <header>
-        <nav class="nav">
-          <a href="/" class="logo">logo</a>
-  
-          <div class="hamburger">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-          </div>
-  
-          <div class="nav__link hide">
-            <a href="#">Entrar</a>
-            <a href="#"></a>
-            <a href="#">Contate-nos</a>
-            <a href="#">Perfil</a>
-          </div>
+        <nav>
+            <img class="rounded-circle mr-3" src="https://source.unsplash.com/70x70/?plantation" alt="">
+            <div class="logo">Wiki frutifera</div>
+            <div class="menu-btn">
+                <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
+            </div>
+    
+            <ul>
+                <li> <a href="#" class="active"> Home </a> </li>
+                <li> <a href="Pages/login.html"> Logar</a> </li>
+                <li> <a href="Pages/inscrever.html"> Cadastrar</a> </li>
+                <li> <a href="Pages/contact.html"> Contate-nos</a> </li>
+                <li> <a href="Pages/profile.html"> Perfil</a> </li>
+            </ul>
         </nav>
 </header>
 <section> <!--Corrosel itens-->
@@ -48,28 +47,28 @@
                     <img class="d-block w-100" src="https://source.unsplash.com/1400x500/?apple" alt="Maça"> <!--Imagens aleatorias de maçãs?-->
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="https://source.unsplash.com/1400x500/?watermelon" alt="Melancia"> <!--Imagens aleatorias de maçãs?-->
+                    <img class="d-block w-100" src="https://source.unsplash.com/1400x500/?watermelon" alt="Melancia"> <!--Imagens aleatorias de melancias?-->
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="https://source.unsplash.com/1400x500/?jabuticaba" alt="Jabuticaba"> <!--Imagens aleatorias de maçãs?-->
+                    <img class="d-block w-100" src="https://source.unsplash.com/1400x500/?jabuticaba" alt="Jabuticaba"> <!--Imagens aleatorias de jabuticaba?-->
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="https://source.unsplash.com/1400x500/?mamao" alt="Mamão"> <!--Imagens aleatorias de maçãs?-->
+                    <img class="d-block w-100" src="https://source.unsplash.com/1400x500/?mamao" alt="Mamão"> <!--Imagens aleatorias de mamão?-->
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="https://source.unsplash.com/1400x500/?mango" alt="Manga"> <!--Imagens aleatorias de maçãs?-->
+                    <img class="d-block w-100" src="https://source.unsplash.com/1400x500/?mango" alt="Manga"> <!--Imagens aleatorias de manga?-->
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="https://source.unsplash.com/1400x500/?grape" alt="Uva"> <!--Imagens aleatorias de maçãs?-->
+                    <img class="d-block w-100" src="https://source.unsplash.com/1400x500/?grape" alt="Uva"> <!--Imagens aleatorias de uva?-->
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="https://source.unsplash.com/1400x500/?avocado" alt="Abacate"> <!--Imagens aleatorias de maçãs?-->
+                    <img class="d-block w-100" src="https://source.unsplash.com/1400x500/?avocado" alt="Abacate"> <!--Imagens aleatorias de abacate?-->
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="https://source.unsplash.com/1400x500/?kiwi" alt="Kiwi"> <!--Imagens aleatorias de maçãs?-->
+                    <img class="d-block w-100" src="https://source.unsplash.com/1400x500/?kiwi" alt="Kiwi"> <!--Imagens aleatorias de kiwi?-->
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="https://source.unsplash.com/1400x500/?blackberry" alt="Amora"> <!--Imagens aleatorias de maçãs?-->
+                    <img class="d-block w-100" src="https://source.unsplash.com/1400x500/?blackberry" alt="Amora"> <!--Imagens aleatorias de amora?-->
                 </div>
             </div>
         </div>
@@ -262,6 +261,7 @@
             loader.style.display = "none";
         })
     </script>
-    <script src="JS/navbar.js"></script>
+    <!--preloader ends-->
+    <script src="JS/navbar.js"></script> <!--javascript do menu de navegação!-->
 </body>
 </html>
