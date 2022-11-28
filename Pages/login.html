@@ -9,32 +9,55 @@
     <link rel="shortcut icon" href="../img/tree-logo.jpg">
 </head>
 <body>
-<div class="login-box">
-  <h2>Login</h2>
-  <form>
-    <div class="user-box">
-      <input type="text" name="" required="">
-      <label>Usuário</label>
+  <section class="forms-section">
+    <h1 class="section-title">Entrar & Cadastrar</h1>
+    <div class="forms">
+      <div class="form-wrapper is-active">
+        <button type="button" class="switcher switcher-login">
+          Entrar
+          <span class="underline"></span>
+        </button>
+        <form class="form form-login">
+          <fieldset>
+            <legend>Por favor, digite seu e-mail e senha para entrar.</legend>
+            <div class="input-block">
+              <label for="login-email">E-mail</label>
+              <input id="login-email" type="email" required>
+            </div>
+            <div class="input-block">
+              <label for="login-password">Senha</label>
+              <input id="login-password" type="password" required>
+            </div>
+          </fieldset>
+          <button type="submit" class="btn-login">Entrar</button>
+        </form>
+      </div>
+      <div class="form-wrapper">
+        <button type="button" class="switcher switcher-signup">
+          Cadastrar
+          <span class="underline"></span>
+        </button>
+        <form class="form form-signup">
+          <fieldset>
+            <legend>Por favor, digite seu e-mail, senha e confirmação de senha para se inscrever.</legend>
+            <div class="input-block">
+              <label for="signup-username">Nome de usuário</label>
+              <input id="signup-email" type="text" required>
+            </div>
+            <div class="input-block">
+              <label for="signup-email">E-mail</label>
+              <input id="signup-email" type="email" required>
+            </div>
+            <div class="input-block">
+              <label for="signup-password">Senha</label>
+              <input id="signup-password" type="password" required>
+            </div>
+          </fieldset>
+          <button type="submit" class="btn-signup" >Cadastrar</button>
+        </form>
+      </div>
     </div>
-    <div class="user-box">
-      <input type="password" name="" required="">
-      <label>Senha</label>
-    </div>
-    <a  id="a1" href="profile.html">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      Submit
-    </a>
-    <a id="a2" href="../index.html">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        Voltar
-    </a>
-  </form>
-</div>
+  </section>
+  <script src="../JS/login.js"></script>
 </body>
 </html>
