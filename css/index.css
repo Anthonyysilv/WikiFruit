@@ -9,6 +9,10 @@ html, body {
     margin: 0;
     padding: 0;
 }
+h5 {
+    text-align: justify;
+}
+/* Back to the top*/
 .btn {
     display: flex;
     justify-content: center;
@@ -34,9 +38,7 @@ html, body {
 .card-text {
     text-align: justify;
 }
-h5 {
-    text-align: center;
-}
+/*Back to the top ends*/
 /*Preloader gif*/
 #preloader {
     background: #FCFAEC url(../img/preloader.gif) no-repeat center center;
